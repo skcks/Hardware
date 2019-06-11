@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:STM32F407VET6-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -427,23 +428,23 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J8
 U 1 1 5C4B2565
-P 2300 5200
-F 0 "J8" H 2380 5192 50  0000 L CNN
-F 1 "Heater1" H 2380 5101 50  0000 L CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type059_RT06302HBWC_1x02_P3.50mm_Horizontal" H 2300 5200 50  0001 C CNN
-F 3 "~" H 2300 5200 50  0001 C CNN
-	1    2300 5200
+P 2450 5150
+F 0 "J8" H 2530 5142 50  0000 L CNN
+F 1 "Heater1" H 2530 5051 50  0000 L CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type059_RT06302HBWC_1x02_P3.50mm_Horizontal" H 2450 5150 50  0001 C CNN
+F 3 "~" H 2450 5150 50  0001 C CNN
+	1    2450 5150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J5
 U 1 1 5C4B4AC4
-P 2300 3850
-F 0 "J5" H 2380 3842 50  0000 L CNN
-F 1 "+ VIN -" H 2380 3751 50  0000 L CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type055_RT01502HDWU_1x02_P5.00mm_Horizontal" H 2300 3850 50  0001 C CNN
-F 3 "~" H 2300 3850 50  0001 C CNN
-	1    2300 3850
+P 2300 3800
+F 0 "J5" H 2380 3792 50  0000 L CNN
+F 1 "+ VIN -" H 2380 3701 50  0000 L CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type055_RT01502HDWU_1x02_P5.00mm_Horizontal" H 2300 3800 50  0001 C CNN
+F 3 "~" H 2300 3800 50  0001 C CNN
+	1    2300 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -491,40 +492,18 @@ F 3 "~" H 1800 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1900 4100 2100 4100
+	2250 5250 2050 5250
 Wire Wire Line
-	1900 4650 2100 4650
+	2050 5250 2050 4750
 Wire Wire Line
-	1900 5200 2100 5200
-Wire Wire Line
-	2100 5300 2050 5300
-Wire Wire Line
-	2050 5300 2050 4750
-Wire Wire Line
-	2050 3950 2100 3950
-Wire Wire Line
-	2100 4200 2050 4200
-Connection ~ 2050 4200
-Wire Wire Line
-	2050 4200 2050 3950
+	2050 3900 2100 3900
 Wire Wire Line
 	2100 4750 2050 4750
 Connection ~ 2050 4750
 Wire Wire Line
-	2050 4750 2050 4200
-Wire Wire Line
-	2000 3850 2100 3850
+	2000 3800 2100 3800
 Wire Wire Line
 	1900 5050 2000 5050
-Wire Wire Line
-	2000 5050 2000 4500
-Wire Wire Line
-	1900 4450 1900 4500
-Wire Wire Line
-	1900 4500 2000 4500
-Connection ~ 2000 4500
-Wire Wire Line
-	2000 4500 2000 3850
 $Comp
 L Device:Q_NMOS_GSD Q4
 U 1 1 5C4D7A9F
@@ -721,7 +700,7 @@ U 1 1 5C4FFC01
 P 1200 6150
 F 0 "C1" H 1300 6100 50  0000 L CNN
 F 1 "10uF 16V" H 1300 6200 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1200 6150 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I" H 1200 6150 50  0001 C CNN
 F 3 "~" H 1200 6150 50  0001 C CNN
 	1    1200 6150
 	1    0    0    -1  
@@ -732,7 +711,7 @@ U 1 1 5C50074F
 P 1200 6600
 F 0 "C2" H 1112 6554 50  0000 R CNN
 F 1 "10uF 16V" H 1112 6645 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1200 6600 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I" H 1200 6600 50  0001 C CNN
 F 3 "~" H 1200 6600 50  0001 C CNN
 	1    1200 6600
 	-1   0    0    -1  
@@ -743,7 +722,7 @@ U 1 1 5C50303A
 P 1200 7050
 F 0 "C3" H 1112 7004 50  0000 R CNN
 F 1 "10uF 16V" H 1112 7095 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1200 7050 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I" H 1200 7050 50  0001 C CNN
 F 3 "~" H 1200 7050 50  0001 C CNN
 	1    1200 7050
 	-1   0    0    -1  
@@ -754,54 +733,10 @@ U 1 1 5C505926
 P 1200 7500
 F 0 "C4" H 1112 7454 50  0000 R CNN
 F 1 "10uF 16V" H 1112 7545 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1200 7500 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I" H 1200 7500 50  0001 C CNN
 F 3 "~" H 1200 7500 50  0001 C CNN
 	1    1200 7500
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Regulator_Switching:LM2596S-5 U4
-U 1 1 5C508FEC
-P 7450 5800
-F 0 "U4" H 7450 6167 50  0000 C CNN
-F 1 "LM2596S-5" H 7450 6076 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 7500 5550 50  0001 L CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 7450 5800 50  0001 C CNN
-	1    7450 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP_Small C5
-U 1 1 5C50912F
-P 6750 6050
-F 0 "C5" H 6838 6096 50  0000 L CNN
-F 1 "100uF 35V" H 6838 6005 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 6750 6050 50  0001 C CNN
-F 3 "~" H 6750 6050 50  0001 C CNN
-	1    6750 6050
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:CP_Small C6
-U 1 1 5C509233
-P 8450 6050
-F 0 "C6" H 8538 6096 50  0000 L CNN
-F 1 "220uF 35V" H 8538 6005 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 8450 6050 50  0001 C CNN
-F 3 "~" H 8450 6050 50  0001 C CNN
-	1    8450 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L_Small L1
-U 1 1 5C50C0B1
-P 8250 5900
-F 0 "L1" H 8297 5946 50  0000 L CNN
-F 1 "47uH" H 8297 5855 50  0000 L CNN
-F 2 "Inductor_THT:L_Radial_D9.5mm_P5.00mm_Fastron_07HVP" H 8250 5900 50  0001 C CNN
-F 3 "~" H 8250 5900 50  0001 C CNN
-	1    8250 5900
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	1100 6250 1200 6250
@@ -916,54 +851,6 @@ Wire Wire Line
 Wire Wire Line
 	1500 5400 1600 5400
 Wire Wire Line
-	8450 6200 8450 6150
-$Comp
-L Diode:B120-E3 D1
-U 1 1 5C51EDB0
-P 8050 6050
-F 0 "D1" V 8004 6129 50  0000 L CNN
-F 1 "SS14" V 8095 6129 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA" H 8050 5875 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88946/b120.pdf" H 8050 6050 50  0001 C CNN
-	1    8050 6050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8450 6200 8050 6200
-Wire Wire Line
-	7450 6200 7450 6100
-Connection ~ 8050 6200
-Wire Wire Line
-	8050 6200 7450 6200
-Wire Wire Line
-	7450 6200 6950 6200
-Wire Wire Line
-	6750 6200 6750 6150
-Connection ~ 7450 6200
-Wire Wire Line
-	6950 5900 6950 6200
-Connection ~ 6950 6200
-Wire Wire Line
-	6950 6200 6750 6200
-Wire Wire Line
-	6750 5950 6750 5700
-Wire Wire Line
-	6750 5700 6950 5700
-Wire Wire Line
-	7950 5900 8050 5900
-Connection ~ 8050 5900
-Wire Wire Line
-	8050 5900 8150 5900
-Wire Wire Line
-	7950 5700 8450 5700
-Wire Wire Line
-	8450 5700 8450 5900
-Wire Wire Line
-	8350 5900 8450 5900
-Connection ~ 8450 5900
-Wire Wire Line
-	8450 5900 8450 5950
-Wire Wire Line
 	4100 1100 4100 1200
 Wire Wire Line
 	5100 1100 5100 1200
@@ -1067,12 +954,12 @@ Text GLabel 900  5200 0    50   Input ~ 0
 GND
 Text GLabel 900  5400 0    50   Input ~ 0
 GND
-Text GLabel 2050 3750 1    50   Input ~ 0
+Text GLabel 2050 3500 1    50   Input ~ 0
 12V
 Wire Wire Line
-	2050 3750 2050 3950
-Connection ~ 2050 3950
-Text GLabel 2000 3850 0    50   Input ~ 0
+	2050 3500 2050 3900
+Connection ~ 2050 3900
+Text GLabel 1900 3800 0    50   Input ~ 0
 GND
 Text GLabel 5600 3550 1    50   Input ~ 0
 GND
@@ -1091,10 +978,6 @@ Text GLabel 4600 4350 3    50   Input ~ 0
 Reset
 Text GLabel 3650 5850 1    50   Input ~ 0
 GND
-Text GLabel 6750 5700 1    50   Input ~ 0
-12V
-Text GLabel 8450 5700 1    50   Input ~ 0
-5V
 Wire Wire Line
 	1150 2250 1250 2250
 Text GLabel 8950 5100 2    50   Input ~ 0
@@ -1351,8 +1234,6 @@ Wire Wire Line
 Wire Wire Line
 	7350 800  7350 1100
 Connection ~ 7100 800 
-Text GLabel 7450 6200 3    50   Input ~ 0
-GND
 $Comp
 L Device:Q_NMOS_GSD Q7
 U 1 1 5C546260
@@ -1712,8 +1593,8 @@ $Comp
 L Device:R_Small R18
 U 1 1 5C614ADE
 P 10650 1750
-F 0 "R18" H 10591 1704 50  0000 R CNN
-F 1 "22R" H 10591 1795 50  0000 R CNN
+F 0 "R18" H 10850 2100 50  0000 R CNN
+F 1 "22R" H 10850 2000 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 10650 1750 50  0001 C CNN
 F 3 "~" H 10650 1750 50  0001 C CNN
 	1    10650 1750
@@ -1723,8 +1604,8 @@ $Comp
 L Device:R_Small R19
 U 1 1 5C61CFBD
 P 10650 1850
-F 0 "R19" H 10591 1804 50  0000 R CNN
-F 1 "22R" H 10591 1895 50  0000 R CNN
+F 0 "R19" H 10600 2200 50  0000 R CNN
+F 1 "22R" H 10600 2100 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 10650 1850 50  0001 C CNN
 F 3 "~" H 10650 1850 50  0001 C CNN
 	1    10650 1850
@@ -2103,7 +1984,6 @@ Connection ~ 850  950
 Connection ~ 850  1500
 Connection ~ 850  2050
 Connection ~ 850  2600
-Connection ~ 1900 4500
 Connection ~ 1250 2250
 Connection ~ 1300 1750
 Text GLabel 1150 2800 3    50   Input ~ 0
@@ -2126,4 +2006,53 @@ Text GLabel 1400 3100 2    50   Input ~ 0
 Wire Wire Line
 	1300 2300 1300 3100
 Connection ~ 1300 2300
+$Sheet
+S 7100 5150 550  500 
+U 5D345ACA
+F0 "POWER" 50
+F1 "power.sch" 50
+F2 "12V" I L 7100 5400 50 
+F3 "5V" O R 7650 5400 50 
+$EndSheet
+Wire Wire Line
+	7100 5400 6900 5400
+Wire Wire Line
+	7650 5400 7850 5400
+Text GLabel 7850 5400 2    50   Input ~ 0
+5V
+Text GLabel 6900 5400 0    50   Input ~ 0
+12V
+Wire Wire Line
+	2050 3900 2050 4200
+Wire Wire Line
+	2100 4200 2050 4200
+Connection ~ 2050 4200
+Wire Wire Line
+	2050 4200 2050 4750
+Wire Wire Line
+	1900 4000 1900 4100
+Wire Wire Line
+	1900 4550 1900 4650
+Wire Wire Line
+	2000 3800 2000 4500
+Wire Wire Line
+	1900 4500 2000 4500
+Connection ~ 2000 4500
+Wire Wire Line
+	2000 4500 2000 5050
+Wire Wire Line
+	1900 3800 2000 3800
+Connection ~ 2000 3800
+Wire Wire Line
+	1900 4000 2100 4000
+Wire Wire Line
+	2100 4100 2100 4000
+Wire Wire Line
+	2100 4650 2100 4550
+Wire Wire Line
+	2100 4550 1900 4550
+Wire Wire Line
+	1900 5200 1900 5150
+Wire Wire Line
+	1900 5150 2250 5150
 $EndSCHEMATC

@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name STM32F407VET6)(type Legacy)(uri ${KIPRJMOD}/STM32F407VET6.lib)(options "")(descr ""))
+  (lib (name dc-dc)(type Legacy)(uri ${KIPRJMOD}/dc-dc.lib)(options "")(descr ""))
 )
