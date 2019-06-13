@@ -203,7 +203,7 @@ AR Path="/5D372874" Ref="C?"  Part="1"
 AR Path="/5D345ACA/5D372874" Ref="C13"  Part="1" 
 F 0 "C13" H 7000 3750 50  0000 L CNN
 F 1 "220uF/16v" H 6750 3650 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 7200 3700 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 7200 3700 50  0001 C CNN
 F 3 "~" H 7200 3700 50  0001 C CNN
 	1    7200 3700
 	1    0    0    -1  
@@ -227,14 +227,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5D372883
-P 8300 4200
+P 8650 4300
 AR Path="/5D372883" Ref="#PWR?"  Part="1" 
 AR Path="/5D345ACA/5D372883" Ref="#PWR05"  Part="1" 
-F 0 "#PWR05" H 8300 3950 50  0001 C CNN
-F 1 "GND" H 8305 4027 50  0000 C CNN
-F 2 "" H 8300 4200 50  0001 C CNN
-F 3 "" H 8300 4200 50  0001 C CNN
-	1    8300 4200
+F 0 "#PWR05" H 8650 4050 50  0001 C CNN
+F 1 "GND" H 8655 4127 50  0000 C CNN
+F 2 "" H 8650 4300 50  0001 C CNN
+F 3 "" H 8650 4300 50  0001 C CNN
+	1    8650 4300
 	1    0    0    -1  
 $EndComp
 Connection ~ 7500 4100
@@ -259,7 +259,7 @@ Wire Wire Line
 Connection ~ 7500 3150
 Text HLabel 3950 3150 0    50   Input ~ 0
 12V
-Text HLabel 8550 3150 2    50   Output ~ 0
+Text HLabel 8950 3150 2    50   Output ~ 0
 5V
 $Comp
 L Device:C_Small C?
@@ -296,8 +296,6 @@ Wire Wire Line
 	8300 3600 8300 3150
 Connection ~ 8300 3150
 Wire Wire Line
-	8300 3150 8550 3150
-Wire Wire Line
 	7950 3800 7950 4100
 Wire Wire Line
 	7950 4100 7500 4100
@@ -306,7 +304,11 @@ Wire Wire Line
 Wire Wire Line
 	8300 4100 7950 4100
 Connection ~ 7950 4100
-Wire Wire Line
-	8300 4200 8300 4100
 Connection ~ 8300 4100
+Wire Wire Line
+	8650 4100 8300 4100
+Wire Wire Line
+	8650 4300 8650 4100
+Wire Wire Line
+	8300 3150 8950 3150
 $EndSCHEMATC
